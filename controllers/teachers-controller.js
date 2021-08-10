@@ -58,8 +58,8 @@ exports.update = (req, res) => {
 
     const teacher = {
         id: id_teacher,
-        cpf: req.body.cpf,
-        password: req.body.password       
+        cpf: req.body.cpf
+               
     }
 
     Teacher.update(teacher, {

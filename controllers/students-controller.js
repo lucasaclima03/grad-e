@@ -58,8 +58,8 @@ exports.update = (req, res) => {
 
     const student = {
         id: id_student,
-        registration: req.body.registration,
-        password: req.body.password       
+        registration: req.body.registration
+              
     }
 
     Student.update(student, {

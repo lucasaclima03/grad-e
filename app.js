@@ -16,9 +16,9 @@ db.sequelize.sync()
 
 
 // ------- IMPORTING ROUTES -------
-const routeUsers = require('./routes/admin-router')
-const routeClients = require('./routes/teachers-routes')
-const routeClients = require('./routes/students-routes')
+const routeAdmin = require('./routes/admin-routes')
+const routeTeachers = require('./routes/teachers-routes')
+const routeStudents = require('./routes/students-routes')
 
 app.use(morgan('dev'))
 app.use(express.urlencoded({extend: false}))

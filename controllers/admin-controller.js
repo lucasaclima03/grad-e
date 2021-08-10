@@ -58,8 +58,8 @@ exports.update = (req, res) => {
 
     const admin = {
         id: id_admin,
-        email: req.body.email,
-        password: req.body.password       
+        email: req.body.email
+               
     }
 
     Admin.update(admin, {
