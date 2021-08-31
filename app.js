@@ -19,6 +19,7 @@ db.sequelize.sync()
 const routeAdmin = require('./routes/admin-routes')
 const routeTeachers = require('./routes/teachers-routes')
 const routeStudents = require('./routes/students-routes')
+const routeAll = require ('/routes/routeAll-routes');
 
 app.use(morgan('dev'))
 app.use(express.urlencoded({extend: false}))
